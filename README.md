@@ -36,5 +36,5 @@ J'ai voulu reproduire une version simplifié de ce jeu pour m'entrainer en back-
 ```
 
 
-* Lancer votre navigateur préféré, puis rendez-vous sur [localhost:3000](http://localhost:3000)
+* Lancer votre navigateur préféré, puis rendez-vous sur [http://localhost:3000](http://localhost:3000)
 * Cliquez !
