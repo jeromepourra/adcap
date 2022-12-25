@@ -14,8 +14,8 @@ J'ai voulu reproduire une version simplifié de ce jeu pour m'entrainer en back-
 ## Installation
 
 
-- 1) Télécharger mon repository
-- 2) Installer les modules
+- Télécharger mon repository
+- Installer les modules
 
 
 ```bash
@@ -25,12 +25,12 @@ J'ai voulu reproduire une version simplifié de ce jeu pour m'entrainer en back-
 
 ## Lancement
 
-- 1) Lancer app.js
+- Lancer app.js
 
 ```bash
   node app.js
 ```
 
-- 2) Lancer votre navigateur préféré, puis rendez-vous sur http://localhost:3000
-- 3) Cliquez !
+- Lancer votre navigateur préféré, puis rendez-vous sur http://localhost:3000
+- Cliquez !
     
