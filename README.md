@@ -13,9 +13,8 @@ J'ai voulu reproduire une version simplifié de ce jeu pour m'entrainer en back-
 
 ## Installation
 
-
-- Télécharger mon repository
-- Installer les modules
+* Télécharger mon repository [ici](https://github.com/jeromepourra/adcap/archive/refs/heads/main.zip)
+* Installer les modules
 
 
 ```bash
@@ -25,12 +24,12 @@ J'ai voulu reproduire une version simplifié de ce jeu pour m'entrainer en back-
 
 ## Lancement
 
-- Lancer app.js
+* Lancer app.js
 
 ```bash
   node app.js
 ```
 
-- Lancer votre navigateur préféré, puis rendez-vous sur http://localhost:3000
-- Cliquez !
+* Lancer votre navigateur préféré, puis rendez-vous sur [localhost:3000](http://localhost:3000)
+* Cliquez !
     
