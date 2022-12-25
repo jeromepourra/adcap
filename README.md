@@ -13,6 +13,7 @@ J'ai voulu reproduire une version simplifié de ce jeu pour m'entrainer en back-
 
 ## Installation
 
+
 * Télécharger mon repository [ici](https://github.com/jeromepourra/adcap/archive/refs/heads/main.zip)
 * Installer les modules
 
@@ -23,13 +24,17 @@ J'ai voulu reproduire une version simplifié de ce jeu pour m'entrainer en back-
   npm install ejs
 ```
 
+
 ## Lancement
 
+
 * Lancer app.js
+
 
 ```bash
   node app.js
 ```
+
 
 * Lancer votre navigateur préféré, puis rendez-vous sur [localhost:3000](http://localhost:3000)
 * Cliquez !
