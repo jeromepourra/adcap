@@ -1,5 +1,6 @@
 # Adventure Capitalist (The Wish Version)
 
+Bonjour !
 Adventure Capitalist est une jeu de type clicker.
 J'ai voulu reproduire une version simplifié de ce jeu pour m'entrainer en back-end avec node.js notamment.
 
