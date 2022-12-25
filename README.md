@@ -14,8 +14,8 @@ J'ai voulu reproduire une version simplifié de ce jeu pour m'entrainer en back-
 ## Installation
 
 
-- 1) Téléchargez mon repository
-- 2) Installez les modules
+- 1) Télécharger mon repository
+- 2) Installer les modules
 
 
 ```bash
