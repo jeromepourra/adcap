@@ -1,2 +1,4 @@
 node_modules
 package*.json
+github.png
+.gitignore

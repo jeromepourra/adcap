@@ -8,21 +8,23 @@ const ADDRESS = new function() {
 
 const REFRESH = new function() {
     this.STOCK_PILE = [];
-    this.FPS = 90;
+    this.FPS = 60;
     this.INTERVAL = 1000 / this.FPS;
 }
 
 const AVERAGE_FPS = new function() {
     this.DATE = Date.now();
-    this.RESET_TIME = 500;
+    this.RESET_TIME = 1000;
     this.RESET_DATE = this.DATE + this.RESET_TIME
+    this.ELEMENT = document.querySelector("#fps > span");
     this.CALL_NB = 0;
     this.AVERAGE = undefined;
     this.calculate = () => {
         let now = Date.now();
         this.CALL_NB++;
-        this.AVERAGE = 1000 / ((now - this.DATE) / this.CALL_NB);
+        this.AVERAGE = Math.round(1000 / ((now - this.DATE) / this.CALL_NB));
         if (now >= this.RESET_DATE) {
+            this.ELEMENT.textContent = this.AVERAGE
             this.reset();
         }
     }

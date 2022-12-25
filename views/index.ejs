@@ -9,8 +9,6 @@
 </head>
 <body>
 
-    <div id="fps">Fps:<span></span></div>
-
     <div id="loader" style="display: block;">
         <div class="circle-container">
             <div class="circle circle-1 border-1"></div>
@@ -24,8 +22,9 @@
     
     <main id="game" class="container" style="display: none;">
 
-        <header class="d-flex bg-1">
+        <header class="d-flex align-items-center justify-content-between bg-1">
             <div id="money" class="d-flex align-items-center c-1">$<span></span></div>
+            <div id="fps" class="c-2">Fps:<span>0</span></div>
         </header>
 
         <% for (const key in player.stands) { %>

@@ -65,7 +65,7 @@ module.exports = class Stands {
                 Handler.RESPONSE_SUCCESS({start: this.runtimer.start, end: this.runtimer.end, revenu: this.revenu});
                 return true;
             } else {
-                Handler.RESPONSE_ERROR("Stand.onRun() -> stand:" + this.data.name + " level" + this.level + " must be purchased before launched");
+                Handler.RESPONSE_ERROR("Stand.onRun() -> stand:" + this.data.name + " level:" + this.level + " must be purchased before launched");
             }
         } else {
             Handler.RESPONSE_ERROR("Stand.onRun() -> stand:" + this.data.name + " already run");
