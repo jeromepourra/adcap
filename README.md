@@ -20,6 +20,7 @@ J'ai voulu reproduire une version simplifié de ce jeu pour m'entrainer en back-
 ```bash
   npm install express
   npm install body-parser
+  npm install ejs
 ```
 
 ## Lancement
