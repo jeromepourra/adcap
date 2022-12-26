@@ -35,7 +35,7 @@ class Game {
             this.createEventListenner(id);
             if (this.stands[id].run) {
                 let stand = this.stands[id];
-                this.standRun(id, stand.runtimer.start, stand.runtimer.end, stand.revenu);
+                this.standRun(id, stand.runtimer.start, stand.runtimer.end);
             }
             this.initializeStandLevel(id);
             this.initializeStandCost(id);
@@ -60,7 +60,7 @@ class Game {
                 dataType: "json",
                 success: (response) => {
                     if (response.success) {
-                        this.standRun(id, response.data.start, response.data.end, response.data.revenu);
+                        this.standRun(id, response.data.start, response.data.end);
                     }
                     console.log(response);
                 },
@@ -188,7 +188,7 @@ class Game {
      * @param {number} end 
      * @param {number} revenu 
      */
-    static standRun(id, start, end, revenu) {
+    static standRun(id, start, end) {
         REFRESH.STOCK_PILE.push({
             call: () => {
     
@@ -221,7 +221,6 @@ class Game {
                 return true;
             },
             finish: () => {
-                // this.updateMoney(revenu);
                 this.updateMoney(this.stands[id].revenu);
             }
         });

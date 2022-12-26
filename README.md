@@ -15,13 +15,15 @@ J'ai voulu reproduire une version simplifié de ce jeu pour m'entrainer en back-
 
 
 * Télécharger mon repository [ici](https://github.com/jeromepourra/adcap/archive/refs/heads/main.zip)
-* Installer les modules
+* Installer node.js [node.js](https://nodejs.org)
+* Installer les dépendances
 
 
 ```bash
   npm install express
   npm install body-parser
   npm install ejs
+  npm install mysql
 ```
 
 

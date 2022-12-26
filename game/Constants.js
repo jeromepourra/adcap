@@ -1,7 +1,7 @@
 module.exports = class Constants {
 
     static DECIMAL_PLACE = 2;
-    static INITIAL_MONEY = 0;
+    static INITIAL_MONEY = 1000;
     static STANDS_DATA = [
         {
             id: 1,

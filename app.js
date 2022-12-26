@@ -13,7 +13,6 @@ const ADDRESS = new function() {
 
 let player = new Player();
 
-app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use("/public", express.static(path.join(__dirname, "public")));
 app.set("views", "./views");
