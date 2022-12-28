@@ -1,9 +1,8 @@
 const path = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
-const Player = require("./game/Player");
-const Handler = require("./request/handler");
 const app = express();
+const gameRoutes = require("./routes/game");
 
 const ADDRESS = new function() {
     this.HOST = "localhost";
@@ -11,21 +10,19 @@ const ADDRESS = new function() {
     this.URL = `http://${this.HOST}:${this.PORT}`;
 }
 
-let player = new Player();
-
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.urlencoded({extended:true}));
 app.use("/public", express.static(path.join(__dirname, "public")));
 app.set("views", "./views");
 app.set("view engine", "ejs");
 
-app.get("/", function(req, res) {
-    res.render("index", {player: player});
+app.use("/game", gameRoutes);
+
+app.get("/connection", function(req, res) {
+    res.sendFile(path.join(__dirname, "views/connection.html"));
 });
 
-app.post("/", function(req, res) {
-    let handler = new Handler(req.body);
-    let response = handler.dispatch(player);
-    res.send(response);
+app.post("/connection", function(req, res) {
+    res.send(req.body);
 });
 
 app.all("/*", function(req, res) {

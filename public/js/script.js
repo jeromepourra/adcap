@@ -3,7 +3,13 @@ import { Initialize } from "./Initialize.js";
 const ADDRESS = new function() {
     this.HOST = "localhost";
     this.PORT = 3000;
-    this.URL = `http://${this.HOST}:${this.PORT}`;
+    this.URL = {
+        BASE: `http://${this.HOST}:${this.PORT}`,
+        GAME: "/game",
+        CONNECTION: "/connection",
+        INSCRIPTION: "/inscription"
+    };
+    
 }
 
 const REFRESH = new function() {

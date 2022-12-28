@@ -1,4 +1,4 @@
-const Handler = require("../request/handler");
+const Handler = require("./request/Handler");
 const Constants = require("./Constants");
 const Stands = require("./Stands");
 

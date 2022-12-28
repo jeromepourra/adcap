@@ -52,7 +52,7 @@ class Game {
         this.elements.stands[id].run.addEventListener("click", () => {
             $.ajax({
                 type: "POST",
-                url: ADDRESS.URL,
+                url: ADDRESS.URL.BASE + ADDRESS.URL.GAME,
                 data: {
                     stand: id,
                     action: "stand-run"
@@ -72,7 +72,7 @@ class Game {
         this.elements.stands[id].buy.addEventListener("click", () => {
             $.ajax({
                 type: "POST",
-                url: ADDRESS.URL,
+                url: ADDRESS.URL.BASE + ADDRESS.URL.GAME,
                 data: {
                     stand: id,
                     action: "stand-upgrade"

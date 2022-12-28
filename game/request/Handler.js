@@ -1,4 +1,4 @@
-const Player = require("../game/Player");
+const Player = require("../Player");
 
 module.exports = class Handler {
 

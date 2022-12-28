@@ -14,7 +14,7 @@ class Initialize {
 
         $.ajax({
             type: "POST",
-            url: ADDRESS.URL,
+            url: ADDRESS.URL.BASE + ADDRESS.URL.GAME,
             data: {
                 action: "initialize"
             },
